@@ -1,0 +1,23 @@
+/* pages/Share/Share.wxss */
+.bg{
+  background: url("http://r.photo.store.qq.com/psc?/V103fdTR0PY8oM/JBM4Sl1ltgGH1NeP*qvP3CH*BvNrgVsZ45vyhD9wmFa3rS3FxWUpaz8gjKwBM1hphPWmA.7F9VY97LVIy311uJqstw4jpZfm.aS492FxvqI!/r") no-repeat;
+  width:750rpx;
+  height:2400rpx;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.bg view{
+  height: 100rpx;
+  width: 600rpx;
+  background-color: #ff6900;
+  font-size: 40rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  top: 47%;
+  left: 75rpx;
+  border-radius: 10px;
+}

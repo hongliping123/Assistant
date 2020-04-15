@@ -1,0 +1,91 @@
+.container{
+  padding: 20rpx 15rpx;
+  box-sizing: border-box;
+}
+.container1{
+  border-bottom: 1rpx solid #EEEEEE;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.container_g{
+  height: 180rpx;
+}
+.container_sy,.container_m{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container_sy>text:nth-child(1){
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(0,0,0,1);
+}
+
+.container_sy>text:nth-child(2),.container_m>text:nth-child(2){
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,102,102,1);
+}
+
+.container_m>text:nth-child(1){
+  font-size:36rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,153,0,1);
+}
+
+.tx{
+  color: #000000 !important;
+}
+
+.default-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 77vh;
+}
+
+.center-img{
+  width:360rpx;
+  height:365rpx;
+}
+
+.default-center>view{
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(204,204,204,1);
+}
+
+.my-pay image{
+  height: 258rpx;
+  width: 712rpx;
+  position: relative;
+}
+
+.pay-left{
+  position: absolute;
+  top: 52rpx;
+  left: 90rpx;
+  height: 188rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pay-left1{
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.pay-left2{
+  font-size: 60rpx;
+  font-weight: bold;
+  color: #fff;
+}

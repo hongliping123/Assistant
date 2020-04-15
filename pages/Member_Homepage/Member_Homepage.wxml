@@ -1,0 +1,78 @@
+<view class="container">
+  <view class="home_container_top_name">
+      <view class="home_container_top_name1">
+        <!-- 左边 -->
+        <view>
+          <image src="{{member.avatar}}"></image>
+          <view>
+            <text>{{member.realname == null || member.realname == "" ? member.nickname:member.realname}}</text>
+            <text>{{member.joinTime}}</text>
+          </view>
+        </view>
+        <!-- 右边 -->
+        <view catchtap="Telephone">
+          <view>
+            <image src="../../utils/img/xzs-21dh@2x.png"></image>
+          <text>{{member.mobile}}</text>
+          </view>
+        </view>
+      </view>
+     <view class="home_container_Middle_Myteam">
+      <view>
+        <view>
+          <image src="../../utils/img/xzs-5sj@2x.png"></image>
+          <text class="text1">分享成功</text>
+          <text class="text2">{{member.scanCount}}</text>
+        </view>
+        <view>
+          <image src="../../utils/img/xzs-6sj@2x.png"></image>
+          <text class="text1">注册商家</text>
+          <text class="text2">{{member.comCount}}</text>
+        </view>
+        <view>
+          <image class="img1" src="../../utils/img/xzs-7sj@2x.png"></image>
+          <text class="text1">成交订单</text>
+          <text class="text2">{{member.orderCount}}</text>
+        </view>
+        <view>
+          <image src="../../utils/img/xzs-8sj@2x.png"></image>
+          <text class="text1">订单总额</text>
+          <text class="text2">{{member.moneysSum}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 线条 -->
+  <view class="line"></view>
+  <!-- 商家信息 -->
+  <view class="business">
+    <view class="business_info">商家信息</view>
+
+       <!-- 什么都没有 -->
+    <view class="default-center" wx:if="{{business.length == 0}}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>赶紧去推广吧</view>
+    </view>
+    <view wx:else>
+      <view class="business_info_list" wx:for="{{business}}"  wx:key="index">
+          <view class="business_info_list_name">
+            {{item.customername}}
+            <!-- 北京时代 -->
+          </view>
+          <view class="business_info_list_sl">
+              <view class="business_info_list_sl_img">
+                  <image src="../../utils/img/xzs-15xsj@2x.png"></image>
+                  <text>{{item.orderCount}}</text>
+              </view>
+              <view class="business_info_list_sl_img">
+                  <image src="../../utils/img/xzs-16xsj@2x.png"></image>
+                  <text>{{item.moneysSum}}</text>
+              </view>
+          </view>
+        </view>
+    </view>
+       
+        
+    </view>
+    
+</view>

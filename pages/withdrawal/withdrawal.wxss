@@ -1,0 +1,263 @@
+page{
+  background-color: #FBF8FB;
+}
+
+.swiper-tap{
+  display: flex;
+  border-top: 1rpx solid #eeeeee;
+  border-bottom: 1rpx solid #eeeeee;
+  background-color: #ffffff;
+}
+
+.swiper-tap-list{
+  width: 50%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.on{
+  color: #3685FC;
+  border-bottom: 3rpx solid #3685FC;
+  font-weight: bold;
+  /* animation:myfirst 5s; */
+  transform: translateX(10rpx);
+  transition: all 0.3s;
+}
+
+
+@keyframes myfirst
+{
+  0%   {background: red;}
+  25%  {background: yellow;}
+  50%  {background: blue;}
+  100% {background: green;}
+ 
+}
+
+.wx_withdrawal{
+   transition: 0.1s ease-in-out;
+}
+
+.wx_withdrawal_name{
+  background-color: #ffffff;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.wx_withdrawal_name image{
+  width: 48rpx;
+  height: 48rpx;
+  margin-left:15rpx;
+  margin-right: 15rpx;
+}
+
+.wx_withdrawal_name>text:nth-child(3){
+  color: #CCCCCC;
+}
+
+.balance,.AmountOfMoney{
+  height: 100rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.AmountOfMoney1{
+  background-color: #ffffff;
+}
+
+.AmountOfMoney1>text:nth-child(3){
+  color: #3685FC;
+}
+
+.text{
+  padding: 40rpx 30rpx;
+}
+
+.text>view:nth-child(1){
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  margin-bottom: 20rpx;
+}
+
+.text view{
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(128,128,128,1);
+  padding: 5rpx 0;
+}
+
+.text_img{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+  
+.text_img>image{
+  width: 182rpx;
+  height: 182rpx;
+}
+
+.text_img text{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+
+.tijiao{
+  margin: 10rpx auto;
+  width:694rpx;
+  height:80rpx;
+  background:rgba(54,133,252,1);
+  border-radius:4rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size:28rpx;
+  color: #ffffff;
+  
+}
+
+.default-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.center-img{
+  width:360rpx;
+  height:300rpx;
+}
+
+.default-center>view{
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(204,204,204,1);
+}
+
+.Record_list1{
+  background-color: #ffffff;
+  /* transition: 5s ease-in-out; */
+}
+
+.Record_list{
+  margin-top: 20rpx;
+  padding: 20rpx 30rpx;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.Record_img{
+  width: 16%;
+  height: 0;
+}
+
+.Record_img>image{
+  width:82rpx;
+  height:82rpx;
+}
+
+.Record_wx{
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tixnaweix{
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+  margin-bottom: 15rpx;
+}
+
+.shijian{
+  font-size:24rpx;
+  font-family:Arial;
+  font-weight:400;
+  color:rgba(153,153,153,1);
+}
+
+.moyn{
+  font-size:34rpx;
+  font-family:Arial;
+  font-weight:400;
+  color:rgba(237,78,84,1);
+  margin-bottom: 15rpx;
+  margin-left: 40rpx;
+}
+
+.tixianzhong{
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+  margin-left: 42rpx;
+}
+
+.cancel_Record{
+ display: flex;
+}
+
+.Record_img1{
+  width: 16%;
+  /* border: 1rpx solid red; */
+}
+
+.cancel_Record_button{
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 28rpx 20rpx 28rpx;
+  border-top: 1rpx solid #eeeeee;
+}
+
+.cancel_Record_button>text:nth-child(1){
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.cancel_Record_button>text:nth-child(2){
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(237,78,84,1);
+}
+
+.shouyi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 138rpx;
+}
+
+.default-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 77vh;
+}
+
+.center-img{
+  width:360rpx;
+  height:365rpx;
+}
+
+.default-center>view{
+  font-size:30rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(204,204,204,1);
+}

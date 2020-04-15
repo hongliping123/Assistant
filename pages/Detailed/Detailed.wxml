@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="my-pay">
+      <image src="https://production.ltby65.com/image/bk@2x.png" lazy-load="true"></image>
+      <view class="pay-left">
+          <view class="pay-left1">总收益(CNY)</view>
+          <view class="pay-left2">￥{{account}}</view>
+      </view>
+    </view>
+     <!-- 什么都没有 -->
+    <view class="default-center" wx:if="{{moneyList.length==0}}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>什么都没有</view>
+    </view>
+    <view wx:else>
+      <view class="container1" wx:for="{{moneyList}}" wx:key="index">
+          <view class="container_sy container_g">
+            <text>{{item.type == '0' ? '订单收益' : '提现'}}</text>
+            <text>{{item.createTime}}</text>
+          </view>
+          <view class="container_m container_g">
+            <text class="{{item.type == 1 ? 'tx' : ''}}">{{item.type == 1 ? '-' : '+'}}{{item.money}}</text>
+            <!-- <text>余额 196.00</text> -->
+          </view>
+      </view> 
+    </view>
+ 
+</view>

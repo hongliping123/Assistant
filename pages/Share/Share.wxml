@@ -1,0 +1,4 @@
+<view class="bg">
+    <!-- <image catchtap="jump" src="https://production.ltby65.com/assis/share_but.jpg"></image> -->
+    <view catchtap="jump">立即成为渠道商</view>
+</view>

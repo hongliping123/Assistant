@@ -1,0 +1,152 @@
+page {
+  /* padding: 0 30rpx; */
+  box-sizing: border-box;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+}
+
+.head>view:nth-child(2){
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(51,51,51,1);
+}
+
+.head>view:nth-child(3){
+  font-size:66rpx;
+  font-family:DIN;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  margin: 30rpx 0;
+}
+
+.suss {
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+.way {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 90rpx;
+  border-top: 1rpx solid #F0F0F0;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.way image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.way_sbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.way_sbox>view{
+  margin-left: 15rpx;
+  font-size:26rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.state {
+  margin: auto;
+  margin-top: 50rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.state_box {
+  margin-left: 50rpx;
+}
+
+.time {
+  margin-top: 50rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 112rpx;
+}
+
+.time_box{
+  margin-top: 20rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(128,128,128,1);
+}
+
+.finish{
+  color:#fff;
+  width:694rpx;
+  height:80rpx;
+  background:rgba(54,133,252,1);
+  border-radius:4rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.r-wrap-item{
+    display: flex;
+}
+/* 左边容器 */
+.r-item-left{
+    display: flex;
+    flex-direction: column;
+    width:100rpx;
+}
+/* 左边容器子项 */
+.r-item-left .r-item-left-crd{
+    flex:1;
+    border-right: 1rpx solid #3784FF;
+}
+/* 点容器 */
+.r-item-left .r-point-wrap{
+    position: relative;
+}
+/* 点容器子项 */
+.r-item-left .r-point-wrap .r-point-item{
+    position: absolute;
+    top:-10rpx;
+    left:90rpx;
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background: #3784FF;
+}
+/* 左子项不要边框块 */
+.r-item-left .r-item-left-crd.first,.r-item-left-crd.last{
+    flex:1;
+    border: none;
+}
+/* 右容器 */
+.r-item-right{
+    flex:10;
+    font-size: 30rpx;
+    padding: 30rpx;
+}
+.r-item-right .r-item-right-time{
+    font-size: 26rpx;
+    color: #B4B4B4;
+}
+
+.r-item-right-content{
+  font-size:28rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+}
+
+.r-item-right-content1{
+  color: #3685FC;
+}

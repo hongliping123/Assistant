@@ -1,0 +1,23 @@
+.dianji{
+  background: url("https://production.ltby65.com/assis/index.png")  no-repeat;
+  width:750rpx;
+  height:2400rpx;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.register{
+  position: absolute;
+  bottom: 40rpx;
+  left: 28rpx;
+  font-size:40rpx;
+  font-family:FZZhengHeiS-B-GB;
+  font-weight:400;
+  color:rgba(62,133,252,1);
+  width:690rpx;
+  height:100rpx;
+  background:rgba(255,255,255,1);
+  border-radius:50rpx;
+  text-align: center;
+  line-height: 100rpx;
+}

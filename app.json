@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/Share/Share",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/Detailed/Detailed",
+    "pages/My_team/My_team",
+    "pages/Order_details/Order_details",
+    "pages/Member_Homepage/Member_Homepage",
+    "pages/Date_today/Date_today",
+    "pages/withdrawal/withdrawal",
+    "pages/mine/mine"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx30ea7e0e697b5ece"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

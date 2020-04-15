@@ -1,0 +1,77 @@
+<view class="container">
+    <view class="swiper-tap">
+        <view class="swiper-tap-list {{ currentTab==0?'on':'' }} " data-current="0" catchtap="swichNav">提现到微信</view>
+        <view class="swiper-tap-list {{ currentTab==1?'on':'' }}" data-current="1" catchtap="swichNav">提现记录</view>
+    </view>
+    <!-- 提现到微信 -->
+    <view class="wx_withdrawal" wx:if="{{currentTab==0}}">
+        <view class="wx_withdrawal_name">
+            <image lazy-load="true" src="https://production.ltby65.com/image/wechat-@2x.png"></image>
+            <text>微信 </text>
+            <text>({{username}})</text>
+        </view>
+        <!-- 可提现余额 -->
+        <view class="balance">
+            <text>可提现余额</text>
+            <text>{{account}}</text>
+        </view>
+        <!-- 提现金额 -->
+        <view class="AmountOfMoney AmountOfMoney1">
+          <text>提现金额</text>
+          <input placeholder="请输入提现金额" disabled="{{ account == 0 ? true : false }}" type="amount" value="{{val}}" bindinput="inputval"></input>
+          <text catchtap="Cash_withdrawal">全部提现</text>
+        </view>
+        <!-- 特别说明 -->
+        <view class="text">
+          <view>提现说明</view>
+          <view>1.首次提现到微信钱包，需先关注“蓝天白云清洁平台”公众号； </view>
+          <view>2.通过公众号底部菜单“我的”->“提现助手”进入提现助手页面；</view>
+          <view>3.点击“立即提现”按钮，进入到小程序并发起提现申请；</view>
+          <view>4.提现申请成功后，提现金额将被冻结并不可用于订单支付；</view>
+          <view>5.平台提现审核专员将于每月10号（如遇节假日顺延）审核提现申请；</view>
+          <view>6.审核成功后，提现金额将于次日24时前到账，具体到账时间以相关支付通道为准。</view>
+        </view>
+        <view class="text_img">
+          <image catchtap="code" lazy-load="true"  src="https://production.ltby65.com/image/gzh.png"></image>
+          <text>点击保存二维码</text>
+        </view>
+        <view class="tijiao" catchtap="Apply">提交申请</view>
+    </view>
+
+    <!-- 什么都没有 -->
+    <view class="default-center" wx:if="{{record_list.length == 0 && currentTab==1}}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>暂无提现记录</view>
+    </view>
+
+    <!-- 提现记录 -->
+    <view wx:else>
+      <view class="Record_list1"  wx:if="{{currentTab==1}}" wx:for="{{record_list}}" wx:key="index">
+      <view class="Record_list">
+        <view class="Record_img">
+          <image lazy-load="true"  src="https://production.ltby65.com/image/wechat@2x.png"></image>
+        </view>
+        <view class="Record_wx">
+            <view>
+              <view class="tixnaweix">{{item.withdrawalMode == 1 ? '银行卡' : '微信钱包' }}</view>
+              <view class="shijian">{{item.createTime}}</view>
+            </view>
+            <view class="shouyi">
+              <view class="moyn">-{{item.amount}}</view>
+              <view class="tixianzhong" style="color: {{item.color}};">{{item.status}}</view>
+            </view>
+        </view>
+      </view>
+    </view>
+    
+      <!-- 取消提现 -->
+      <!-- <view class="cancel_Record">
+        <view class="Record_img1"></view>
+        <view class="cancel_Record_button">
+          <text>预计09-18前提现到账</text>
+          <text>取消提现</text>
+        </view>
+      </view> -->
+    </view>
+    
+</view>

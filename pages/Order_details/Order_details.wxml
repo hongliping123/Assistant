@@ -1,0 +1,28 @@
+<view class="container">
+ 
+     <!-- 什么都没有 -->
+    <view class="default-center"  wx:if="{{Team.length == 0 || Team.length == null }}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>赶紧去推广吧</view>
+    </view>
+    <view wx:else>
+      <view class="Order_details_list" wx:for="{{Team}}" wx:key="index">
+          <!-- 左边 -->
+          <view class="left">
+            <view class="left_name">
+              <text>{{item.realname}} </text>
+              <text>{{item.customername}}</text>
+            </view>
+            <view class="left_price">订单金额 {{item.realMoneys}}</view>
+            <view class="left_time">{{item.payTime}}</view>
+          </view>
+          <!-- 右边 -->
+          <view class="right_price">
+            +{{item.gold}}
+          </view>
+      </view>
+
+    </view>
+        
+  
+</view>

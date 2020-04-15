@@ -1,0 +1,11 @@
+ <view>
+    <view class="login" v-if="isShowLogin">
+      <view class="login-container">
+        <image src="https://production.ltby65.com/image/logo.png"></image>
+        <text>亲爱的用户，您好<br/>初次使用小程序请先登录</text>
+          <button form-type="submit" open-type="getUserInfo" type="primary" size="large"  bindgetuserinfo="onGotUserInfo">微信登录</button>
+          <button type="primary" size="large" catchtap="returnindex">返回首页</button>
+      </view>
+    </view>
+    <view class="hides" v-if="isShowLogin"></view>
+ </view>

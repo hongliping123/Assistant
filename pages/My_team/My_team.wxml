@@ -1,0 +1,87 @@
+<view class="container">
+<!-- 数据概括 -->
+  <view class="home_container_Middle_Myteam">
+      <view>
+        <view>
+          <!-- <image src="../../utils/img/xzs-3td@2x.png"></image> -->
+          <text>数据概括</text>
+        </view>
+        <view catchtap="OrderDetails" class="details">
+          <!-- <text>60人</text>
+          <image src="../../utils/img/xzs-0jt@2x.png"></image> -->
+          订单详情
+        </view>
+      </view>
+      <view>
+        <view>
+          <image src="../../utils/img/xzs-5sj@2x.png"></image>
+          <text class="text1">分享成功</text>
+          <text class="text2">{{team.scanCount}}</text>
+        </view>
+        <view>
+          <image src="../../utils/img/xzs-6sj@2x.png"></image>
+          <text class="text1">注册商家</text>
+          <text class="text2">{{team.comCount}}</text>
+        </view>
+        <view>
+          <image class="img1" src="../../utils/img/xzs-7sj@2x.png"></image>
+          <text class="text1">成交订单</text>
+          <text class="text2">{{team.orderCount}}</text>
+        </view>
+        <view>
+          <image src="../../utils/img/xzs-8sj@2x.png"></image>
+          <text class="text1">订单总额</text>
+          <text class="text2">{{team.moneysSum}}</text>
+        </view>
+      </view>
+  </view>
+  <!-- 线条 -->
+  <view class="line"></view>
+  <!-- 成员 -->
+  <view class="member">
+    <view class="member_Number_data">
+        <view class="member_Number">
+          成员{{team.teamCount}}人
+        </view>
+        <view class="member_Number_t">
+            <image src="../../utils/img/xzs-13xsj@2x.png"></image>
+        </view>
+        <view class="member_Number_t">
+            <image src="../../utils/img/xzs-14xsj@2x.png"></image>
+        </view>
+        <view class="member_Number_t">
+            <image src="../../utils/img/xzs-15xsj@2x.png"></image>
+        </view>
+        <view class="member_Number_t">
+            <image src="../../utils/img/xzs-16xsj@2x.png"></image>
+        </view>
+    </view>
+     <!-- 什么都没有 -->
+    <view class="default-center" wx:if="{{Team.length==0}}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>赶紧去推广吧</view>
+    </view>
+    <view wx:else>
+      <view class="member_Number_lsit"  wx:for="{{Team}}" wx:key="index" data-ltbyUserId="{{item.ltbyUserId}}" catchtap="MemberHomepage">
+        <view class="member_Number_touxian">
+            <image lazy-load="true" mode="widthFix" src="{{item.avatar}}"></image>
+            <text>{{item.realname == null || item.realname == "" ? item.nickname:item.realname}}</text>
+        </view>
+        <view class="member_Number_t">
+            {{item.scanCount}}
+        </view>
+        <view class="member_Number_t">
+            {{item.comCount}}
+        </view>
+        <view class="member_Number_t">
+            {{item.orderCount}}
+        </view>
+        <view class="member_Number_t">
+           {{item.moneysSum}}
+        </view>
+    </view>
+    
+    </view>
+    
+  </view>
+</view>

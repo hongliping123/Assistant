@@ -1,0 +1,70 @@
+<view class="home_container_Middle_Myteam">
+  <view>
+    <view>
+      <image src="../../utils/img/xzs-9sj@2x.png"></image>
+      <text class="text1">分享成功</text>
+      <text class="text2 text2bg">{{today.scanCount}}</text>
+    </view>
+    <view>
+      <image src="../../utils/img/xzs-10sj@2x.png"></image>
+      <text class="text1">注册商家</text>
+      <text class="text2 text2bg">{{today.comCount}}</text>
+    </view>
+    <view>
+      <image class="img1" src="../../utils/img/xzs-11sj@2x.png"></image>
+      <text class="text1">成交订单</text>
+      <text class="text2 text2bg">{{today.orderCount}}</text>
+    </view>
+    <view>
+      <image src="../../utils/img/xzs-12sj@2x.png"></image>
+      <text class="text1">订单总额</text>
+      <text class="text2 text2bg">{{today.moneysSum}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 线条 -->
+<view class="line"></view>
+
+<!-- 数据详情 -->
+ <view class="member">
+    <view class="member_Number_data">
+        <view class="member_Number">
+          数据详情
+        </view>
+    </view>
+     <!-- 什么都没有 -->
+    <view class="default-center" wx:if="{{todayList.length==0}}">
+      <image class="center-img" lazy-load="true"  src="https://production.ltby65.com/image/x.png"></image>
+      <view>赶紧去推广吧</view>
+    </view>
+
+    <view wx:else>
+      <view class="member_Number_lsit" wx:for="{{todayList}}" wx:key="index" data-ltbyUserId="{{item.ltbyUserId}}" catchtap="MemberHomepage">
+        <view class="member_Number_touxian">
+            <image lazy-load="true" mode="widthFix" src="{{item.avatar}}"></image>
+            <text>{{item.realname == null || item.realname == "" ? item.nickname:item.realname}}</text>
+        </view>
+        <view class="member_Number_t">
+            <image src="../../utils/img/xzs-17xsj@2x.png"></image>
+            <text>{{item.scanCount}}</text>
+        </view>
+        <view class="member_Number_t">
+          <image src="../../utils/img/xzs-18xsj@2x.png"></image>
+           
+            <text> {{item.comCount}}</text>
+        </view>
+        <view class="member_Number_t">
+          <image src="../../utils/img/xzs-19xsj@2x.png"></image>
+            
+            <text>{{item.orderCount}}</text>
+        </view>
+        <view class="member_Number_t">
+          <image src="../../utils/img/xzs-20xsj@2x.png"></image>
+           
+           <text>{{item.moneysSum}}</text>
+        </view>
+    </view>
+    </view>
+    
+  </view>

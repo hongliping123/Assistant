@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    
+  },
+  "navigationBarBackgroundColor": "#3366FF",
+  "navigationBarTitleText": "运营小助手",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true ,
+  "backgroundTextStyle": "dark" 
+}

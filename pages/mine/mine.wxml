@@ -1,0 +1,83 @@
+<view class="head">
+  <image src="https://production.ltby65.com/image/wechat-@2x.png" class="suss"></image>
+  <view>提现申请提交成功</view>
+  <view>￥2000</view>
+</view>
+
+<view class="way">
+  <view>提现方式</view>
+  <view class="way_sbox">
+    <image src="https://production.ltby65.com/image/wechat-@2x.png"></image>
+    <view>微信({{username}})</view>
+  </view>
+</view>
+
+<view class="state">
+  <view>提现状态</view>
+  <view class="r-wrap">
+    <!-- 每一条数据 -->
+    <view class="r-wrap-item">
+      <!-- 左子项 -->
+      <view class="r-item-left">
+        <!-- 左子项上块 -->
+        <view class="r-item-left-crd first"></view>
+        <!-- 点 -->
+        <view class="r-point-wrap">
+          <view class="r-point-item"></view>
+        </view>
+        <!-- 左子项下块 -->
+        <view class="r-item-left-crd"></view>
+      </view>
+      <!-- 右子项 -->
+      <view class="r-item-right">
+        <!-- 内容 -->
+        <view class="r-item-right-content r-item-right-content1">
+          提现申请已提交，等待后台审核
+        </view>
+        <!-- 时间 -->
+        <view class="r-item-right-time">
+          2019-11-20 22:05:48
+        </view>
+      </view>
+    </view>
+
+
+    
+
+    <!-- 每一条数据 -->
+    <view class="r-wrap-item">
+      <!-- 左子项 -->
+      <view class="r-item-left">
+        <!-- 左子项上块 -->
+        <view class="r-item-left-crd"></view>
+        <!-- 点 -->
+        <view class="r-point-wrap">
+          <view class="r-point-item"></view>
+        </view>
+        <!-- 左子项下块 -->
+        <view class="r-item-left-crd last"></view>
+      </view>
+      <!-- 右子项 -->
+      <view class="r-item-right">
+        <!-- 内容 -->
+        <view class="r-item-right-content">
+          到账时间预计2小时内
+        </view>
+        <!-- 时间 -->
+        <view class="r-item-right-time">
+          2019-11-20 11:28:15
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="time">
+  <view>到账时间</view>
+  <view class="time_box">
+    <view>1.微信提现到账时间2小时内</view>
+    <view>2.节假日顺延</view>
+  </view>
+</view>
+
+<view class="finish">完成</view>
